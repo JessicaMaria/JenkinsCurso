@@ -16,10 +16,10 @@ pipeline{
     stage("Operaciones Aritméticas"){
       steps{
         script{
-          def suma = env.n1 + env.n2
-          def resta = env.n1 - env.n2
-          def multi = env.n1 * env.n2
-          def div = env.n1 / env.n2
+          def suma = env.n1.toInteger() + env.n2.toInteger()
+          def resta = env.n1.toInteger() - env.n2.toInteger()
+          def multi = env.n1.toInteger() * env.n2.toInteger()
+          def div = env.n1.toInteger() / env.n2.toInteger()
           info = "Los resultados de las operaciones de los números ${env.n1} y ${env.n2} son: \n Suma: ${suma} \n Resta: ${resta} \n Multiplicación: ${multi} \n División: ${div}"
           println "${info}"
         }
