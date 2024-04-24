@@ -20,8 +20,7 @@ pipeline{
           def resta = env.n1 - env.n2
           def multi = env.n1 * env.n2
           def div = env.n1 / env.n2
-          info = "Los resultados de las operaciones de los números ${env.n1} y ${env.n2} son: /n Suma: ${suma} /n Resta: ${resta} /n 
-                  Multiplicación: ${multi} /n División: ${div}"
+          info = "Los resultados de las operaciones de los números ${env.n1} y ${env.n2} son: \n Suma: ${suma} \n Resta: ${resta} \n Multiplicación: ${multi} \n División: ${div}"
           println "${info}"
         }
       }
