@@ -33,7 +33,7 @@ pipeline{
       stage("Crear fichero"){
         steps{
           script{
-            writefile(file: env.n_fichero, text: info)
+            writeFile(file: env.n_fichero, text: info)
             println "El fichero ${env.n_fichero} ha sido creado"
           }
         }
